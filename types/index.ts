@@ -9,11 +9,15 @@ export interface IBlog {
 	category: ICategoryAndTags
 	tag: ICategoryAndTags
 	image: { url: string }
+	createdAt: string
+	content: { html: string }
+	slug: string
 }
 
 export interface IAuthor {
 	name: string
 	image: { url: string }
+	bio: string
 }
 
 export interface ICategoryAndTags {
