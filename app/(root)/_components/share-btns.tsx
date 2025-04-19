@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@/components/ui/button'
 import { Facebook, Link2, Linkedin, Send, Twitter } from 'lucide-react'
 import { usePathname } from 'next/navigation'
