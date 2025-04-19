@@ -44,8 +44,9 @@ function ContactForm() {
 				}),
 			}
 		)
-			.then(() => form.reset())
-			.finally(() => setLoading(false))
+		console.log(promise)
+		// .then(() => form.reset())
+		// .finally(() => setLoading(false))
 
 		toast.promise(promise, {
 			loading: 'Loading...',

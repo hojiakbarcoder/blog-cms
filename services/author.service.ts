@@ -13,7 +13,7 @@ export const getAuthors = async () => {
 				image {
 					url
 				}
-				blog {
+				blogs {
 					id
 				}
 			}
@@ -32,7 +32,7 @@ export const getDetaileddAuthor = async (id: string) => {
 				}
 				name
 				bio
-				blog {
+				blogs {
 					description
 					author {
 						name

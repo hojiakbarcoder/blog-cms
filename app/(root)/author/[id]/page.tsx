@@ -18,7 +18,7 @@ async function Page({ params }: { params: { id: string } }) {
 				/>
 				<div className='flex-1 flex flex-col space-y-4'>
 					<p className='text-muted-foreground text-xl'>
-						<span className='font-bold text-white'>{author.blog.length}</span>{' '}
+						<span className='font-bold text-white'>{author.blogs.length}</span>{' '}
 						Published posts
 					</p>
 					<h2 className='text-3xl font-creteRound'>{author.name}</h2>
@@ -33,7 +33,7 @@ async function Page({ params }: { params: { id: string } }) {
 			</h2>
 
 			<div className='flex flex-col space-y-24 mt-24'>
-				{author.blog.map(blog => (
+				{author.blogs.map(blog => (
 					<BlogCard key={blog.title} {...blog} />
 				))}
 			</div>
